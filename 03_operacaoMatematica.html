@@ -8,11 +8,47 @@
     */
 
     //ENTRADA
-
-
+    const num = Number(prompt(`Insira um numero:`)).trim().replace(",", ".");
+    const num2 = Number(prompt(`Insira outro numero:`)).trim().replace(",", ".");
+    const operacao = prompt(`Qual operação você deseja realizar? (M-multiplicação, D-divisão, S-subtração e A-adição)`).toUpperCase();
+    let resultado = 0;
     //PROCESSAMENTO
+    switch (operacao) {
+        case "M":
+            resultado = num * num2;
+            break;
+        case "D":
+            resultado = num / num2;
+            break;
+        case "S":
+            resultado = num - num2;
+            break;
+        case "A":
+            resultado = num + num2;
+            break;
+    }
 
-    
+    switch (resultado) {
+        case 0:
+            alert("O número é par!");
+            break;
+        default:
+            alert("o numero é ímpar!");
+            break;
+    }
+    if (numero > 0) {
+        alert(`O número é positivo!`);
+    }
+    else {
+        alert(`O número é negativo!`);
+    }
+    if (resultado % 1 > 0) {
+        alert(`O número é decimal!`);
+    }
+    else {
+        alert(`O número é inteiro!`);
+    }
+
     //SAÍDA
 
 </script>
