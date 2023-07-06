@@ -6,19 +6,99 @@
     */
 
     //ENTRADA
-    let hemisferio = prompt("Em qual hemisfério você está? (N-norte ou S-sul:) ").trim().toUpperCase();
-    let mes = parseInt(prompt("Qual o mês atual? (1 até 12) "));
+    const hemisfério = prompt("Informe em qual hemisfério você está: (N - norte, S - sul)").toUpperCase().trim()
+    const mês = prompt("Informe em que mês voce esta:").toUpperCase().trim()
 
     //PROCESSAMENTO
-    switch (hemisferio) {
+
+    switch (hemisfério) {
         case "N":
-            
+            switch (mês) {
+                case "janeiro":
+                    alert("Inverno");
+                    break;
+                case "fevereiro":
+                    alert("Inverno");
+                    break;
+                case "março":
+                    alert("Inverno");
+                    break;
+                case "abril":
+                    alert("Primavera");
+                    break;
+                case "maio":
+                    alert("Primavera");
+                    break;
+                case "junho":
+                    alert("Primavera");
+                    break;
+                case "julho":
+                    alert("Verão");
+                    break;
+                case "agosto":
+                    alert("Verão");
+                    break;
+                case "setembro":
+                    alert("Verão");
+                    break;
+                case "outubro":
+                    alert("Outono");
+                    break;
+                case "novembro":
+                    alert("Outono");
+                    break;
+                case "dezembro":
+                    alert("Outono");
+                    break;
+                default:
+                    alert("valor invalido");
+                    break;
+
+            }
     }
-    else if (hemisferio == "S") {
-        if (mes == 1 || mes == 2 || mes == 3) estacao = "Verão";
-        else if (mes == 4 || mes == 5 || mes == 6) estacao = "Outono";
-        else if (mes == 7 || mes == 8 || mes == 9) estacao = "Interno";
-        else if (mes == 10 || mes == 11 || mes == 12) estacao = "Primavera";
-        else alert("Mês inválido.");
+    switch (hemisfério) {
+        case "S":
+            switch (mês) {
+                case "janeiro":
+                    alert("Verão");
+                    break;
+                case "fevereiro":
+                    alert("Verão");
+                    break;
+                case "março":
+                    alert("Verão");
+                    break;
+                case "abril":
+                    alert("Outono");
+                    break;
+                case "maio":
+                    alert("Outono");
+                    break;
+                case "junho":
+                    alert("Outono");
+                    break;
+                case "julho":
+                    alert("Inverno");
+                    break;
+                case "agosto":
+                    alert("Inverno");
+                    break;
+                case "setembro":
+                    alert("Inverno");
+                    break;
+                case "outubro":
+                    alert("Primavera");
+                    break;
+                case "novembro":
+                    alert("Primavera");
+                    break;
+                case "dezembro":
+                    alert("Primavera");
+                    break;
+                default:
+                    alert("valor invalido");
+                    break;
+
+            }
     }
 </script>
