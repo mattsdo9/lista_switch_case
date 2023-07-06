@@ -12,9 +12,34 @@
 
     //ENTRADA
 
-    
+    const Telefonou = prompt(`Telefonou para a vítima?("S" para Sim e "N" para Não)`).trim().toUpperCase();
+    const local = prompt(`Esteve no local do crime?("S" para Sim e "N" para Não)`).trim().toUpperCase();
+    const Mora = prompt(`Mora perto da vítima?("S" para Sim e "N" para Não)`).trim().toUpperCase();
+    const Devia = prompt(`Devia para a vítima?("S" para Sim e "N" para Não)`).trim().toUpperCase();
+    const trabalhou = prompt(`Já trabalhou com a vítima?("S" para Sim e "N" para Não)`).trim().toUpperCase();
+    const respostas = Number(prompt(`Quantas perguntas respondeu Sim`).trim());
     //PROCESSAMENTO
 
+    switch (respostas) {
+        case 2:
+            alert("Suspeita");
+            break;
+    }
+    switch (respostas) {
+        case 3:
+            alert("Cúmplice");
+            break;
+    }
+    switch (respostas) {
+        case 4:
+            alert("Cúmplice");
+            break;
+    }
+    switch (respostas) {
+        case 5:
+            alert("Assasino");
+            break;
+    }
 
     //SAÍDA
 
